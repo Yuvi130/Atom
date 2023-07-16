@@ -7,7 +7,7 @@ import logging
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f"""
 Hello {update.effective_user.first_name}
-Welcome to @FakeMaiilRobot.
+Welcome to @OPBED_bot.
 """, reply_markup=buttons)
 
 async def query_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
@@ -84,7 +84,7 @@ if __name__ == "__main__":
         app.add_handler(CommandHandler("start", start))
         app.add_handler(CallbackQueryHandler(query_handler))
 
-        print("Bot is Alive")
+        print("Bot is Working")
 
         app.run_polling()
 
